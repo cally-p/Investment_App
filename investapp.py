@@ -22,7 +22,7 @@ def createinvestment():
   total_withdrawer = withdrawer_amount 
   New_wallet_balance = wallet_balance - total_withdrawer - withdrawer_tax
 
-  if wallet_balance > total_withdrawer:
+  if wallet_balance > total_withdrawer and New_wallet_balance > withdrawer_tax:
 
      print("withdrawal successful, your account has been debited with", total_withdrawer,  
      "and 7% VAT  has been deducted", "your New_wallet balance is", "#", New_wallet_balance)
